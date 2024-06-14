@@ -23,7 +23,7 @@ import requests
 import configparser
 from requests.auth import HTTPBasicAuth
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 def load_config(file_path):
     config = configparser.ConfigParser()
@@ -204,4 +204,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
