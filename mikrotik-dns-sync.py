@@ -3,11 +3,11 @@
 """
 MikroTik Static DNS Synchronizer
 
-This Python script automates two-way synchronization of static DNS entries between a configuration file (config.ini) and a MikroTik router, intelligently handling both CNAME and A record types.
+This Python script automates the synchronization of static DNS entries between a configuration file (config.ini) and a MikroTik router, intelligently handling A, AAAA, and CNAME record types. The configuration file serves as the source of truth, ensuring that the router's DNS settings match the defined configuration.
 
 **Features:**
 
-* Adds new DNS entries (CNAME and A) from config.ini to the router.
+* Adds new DNS entries (A, AAAA, and CNAME) from config.ini to the router.
 * Deletes entries from the router that are missing in config.ini.
 * Provides clear information on synchronization actions (added, deleted, unchanged entries).
 
